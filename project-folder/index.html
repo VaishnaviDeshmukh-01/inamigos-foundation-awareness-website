@@ -5,65 +5,118 @@
   <meta charset="UTF-8">
   <meta name="viewport"
     content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes, shrink-to-fit=no">
-  <title>InAmigos Foundation • Responsive Navbar</title>
+  <!-- SEO Meta -->
+  <meta name="description"
+    content="InAmigos Foundation – A Section 8 non-profit working for education, environment, animal welfare and community development in Bilaspur, Chhattisgarh since 2020.">
+  <meta name="keywords"
+    content="NGO, Bilaspur, Chhattisgarh, InAmigos Foundation, education, environment, animal welfare, non-profit, volunteer, donate">
+  <meta name="author" content="InAmigos Foundation">
+  <meta name="robots" content="index, follow">
 
+  <!-- Open Graph (Facebook/LinkedIn) -->
+  <meta property="og:title" content="InAmigos Foundation – Uniting Minds, Creating Change">
+  <meta property="og:description"
+    content="Empowering communities through education, environment, animal welfare and youth development since 2020.">
+  <meta property="og:image" content="Assets/og-image.jpg">
+  <meta property="og:url" content="https://www.inamigosfoundation.org.in">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="InAmigos Foundation">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="InAmigos Foundation – Uniting Minds, Creating Change">
+  <meta name="twitter:description"
+    content="Empowering communities through education, environment, animal welfare and youth development.">
+  <meta name="twitter:image" content="Assets/og-image.jpg">
+  <title>InAmigos Foundation</title>
+  <link rel="icon" type="image/png" href="favicon-logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
   <link rel="stylesheet" href="style.css">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=YOUR-GA4-ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'YOUR-GA4-ID');
+  </script>
 </head>
 
 <body>
-
+  <!-- <a href="#main-content" class="skip-link">Skip to main content</a> -->
   <nav class="navbar">
-
-    <!-- LOGO -->
     <a href="#" class="logo-link" aria-label="InAmigos Foundation home">
-      <img src="horizontal-logo.png" alt="InAmigos Foundation Logo" class="logo-img" />
+      <img src="Assets/horizontal-logo-removebg-preview.png" alt="InAmigos Foundation Logo" class="logo-img" />
     </a>
-
-    <!-- DESKTOP NAV (visible on desktop) -->
     <div class="desktop-nav-wrapper">
       <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Initiatives</a></li>
-        <li><a href="#">Impact</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Get Involved</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#initiatives">Our Initiatives</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#footer">Contact Us</a></li>
       </ul>
-      <a href="#" class="btn-donate">
+      <a target="_blank" href="https://pages.razorpay.com/pl_H621G6ea64ZMl7/view" class="btn-donate">
         <i class="fas fa-heart"></i> Donate Now
       </a>
     </div>
-
-    <!-- HAMBURGER MENU BUTTON (visible on mobile/tablet) -->
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
       <i class="fas fa-bars"></i>
     </button>
-
-    <!-- MOBILE MENU CONTAINER (hidden by default) -->
     <div class="mobile-menu-container" id="mobileMenu">
       <ul class="nav-links" id="mobileNavLinks">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Our Initiatives</a></li>
-        <li><a href="#">Impact</a></li>
-        <li><a href="#">Gallery</a></li>
-        <li><a href="#">Get Involved</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#initiatives">Our Initiatives</a></li>
+        <li><a href="#impact">Impact</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#get-involved">Get Involved</a></li>
+        <li><a href="#footer">Contact Us</a></li>
       </ul>
       <div class="mobile-donate-wrapper">
-        <a href="#" class="btn-donate">
+        <a target="_blank" href="https://pages.razorpay.com/pl_H621G6ea64ZMl7/view" class="btn-donate">
           <i class="fas fa-heart"></i> Donate Now
         </a>
       </div>
     </div>
-
   </nav>
 
-  <!-- <script src="script.js"></script> -->
+  <main id="main-content">
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-container">
+        <div class="hero-content">
+          <h1>
+            Uniting Minds.<br>
+            <span>Creating Change.</span>
+          </h1>
+          <p>
+            InAmigos Foundation works towards empowering communities through education,
+            environment, animal welfare and youth development.
+          </p>
+          <div class="hero-buttons">
+            <a target="_blank"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScAgWgiWEjMm5N5HO9f-kF5_MNCsFu0AjfF9-sFnWGYdJG7Jg/viewform"
+              class="btn primary">Join Us as a Volunteer</a>
+            <a href="#impact" class="btn secondary">
+              <i class="fas fa-play-circle"></i> See Our Impact
+            </a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="Assets/Logo.jpg" alt="logo" class="card-logo">
+          <div class="divider"></div>
+          <p><strong>Since</strong></p>
+          <h2>2020</h2>
+          <p class="location">📍 Bilaspur, Chhattisgarh, India</p>
+        </div>
+      </div>
+    </section>
 
+  <script src="script.js"></script>
 </body>
 
 </html>
